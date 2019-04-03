@@ -1,6 +1,6 @@
 # 0. Getting Started
 
-This section initializes the developer environment and explains how you can make changes to the code and perform testing.
+This section initializes the development environment and explains how you can make changes to the code and execute tests.
 
 ## Prerequisites
 
@@ -53,8 +53,8 @@ Locate your skill "hello node" and press "Edit"
 
 ![image](../assets/0_Alexa_Developer_Console.jpg)
 
-In the "Build" tab, locate the *Skill Invocation Name*.  
-Switch to the "Test" tab, use the dropdown to select "Development" and use the *Skill Invocation Name* to active the skill.  
+In the "Build" tab, locate the **Skill Invocation Name**.  
+Switch to the "Test" tab, use the dropdown to select "Development" and use the **Skill Invocation Name** to active the skill.  
 Familiarize with the skill model ("Build" tab) and try out different inputs (voice or text) again in tab "Test".
 
 ![image](../assets/0_Alexa_Developer_Console_test.jpg)
@@ -67,11 +67,11 @@ In Codestar - Inspect Pipeline, go to CodeDeploy and adjust Deployment Group →
 
 ![image](../assets/0_adjust_pipeline.png)
 
-In Cloud9, open the *skill.json* file and change the skill name e.g. hello hana playground. Make sure to save the file!
+In Cloud9, open the **skill.json** file and change the skill name e.g. hello hana playground. Make sure to save the file!
 
 ![image](../assets/0_alexa-hana-play_-_AWS_Cloud9.jpg)
 
-Open the *index.js* lambda code and find the welcome text. Make some changes! Make sure to save the file!
+Open the **index.js** lambda code and find the welcome text. Make some changes! Make sure to save the file!
 
 ![image](../assets/0_alexa-hana-play_-_AWS_Cloud9_welcome.jpg)
 
