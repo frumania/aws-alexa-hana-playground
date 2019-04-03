@@ -1,5 +1,6 @@
 # 1. Run SAP HANA Quick Start
 
+More Infos about AWS Quick Start for SAP HANA can be found here  
 https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
 ## Prerequisites
@@ -95,7 +96,7 @@ handle(handlerInput)
 
 Perform the similar change for the **HANAStatusIntentHandler**. Desired method is "getStatus()".
 
-Open the **hanaquickstart.js** and make desired changes. Especially adjust the bucket URL, where the SAP HANA software has been downloaded.
+Open the **hanaquickstart.js** and make desired changes. Especially adjust the **HANAInstallMedia** = S3 bucket URL, where the SAP HANA software should have been stored. Also check/edit again the **HANAMasterPass** and **KeyName**.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_code.jpg)
 
