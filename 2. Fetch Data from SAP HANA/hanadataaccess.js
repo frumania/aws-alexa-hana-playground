@@ -31,7 +31,7 @@ module.exports = {
         });
     },
     
-    fetch: function() {
+    load: function() {
         
         return new Promise(function(resolve, reject) 
         {

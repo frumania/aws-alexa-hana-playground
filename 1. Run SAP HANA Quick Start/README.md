@@ -74,7 +74,7 @@ Copy & paste the contents of [hanaquickstart.js](hanaquickstart.js) and save.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
 
-Open the **index.js** file and add the following runtime dependecy on the very top
+Open the **index.js** file and add the following runtime dependency on the very top
 
 ```javascript
 const Alexa = require('ask-sdk-core');
@@ -101,7 +101,9 @@ handle(handlerInput)
 ```
 
 Perform the similar change for the **HANAStatusIntentHandler**. Desired method is **getStatus()**.  
-Feel free to check out the code inside **hanaquickstart.js**. Promises have to be used, so that Alexa can wait for the Cloud Formation API to respond!   Especially adjust the **HANAInstallMedia** = S3 bucket URL, where the SAP HANA software should have been stored. Also check/edit again the **HANAMasterPass** and **KeyName**.
+Make sure to check out the code inside **hanaquickstart.js**. P
+
+> Note: Promises have been used, so that Alexa can wait for the Cloud Formation API to respond! Especially adjust the **HANAInstallMedia** = S3 bucket URL, where the SAP HANA software should have been stored. Also check/edit again the **HANAMasterPass** and **KeyName**.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_code.jpg)
 

@@ -9,17 +9,31 @@
 
 ## Step 1 - Add Intent & Utterances
 
-Add Intent "HANARequestData" in Skillbuilder
-Adjust utterances
-Copy json to Cloud9
+Open the Skillbuilder and go to the "Build" tab.  
+Add a new intent “HANAFetchDataIntent”. Provide some utterances and save the model.  
+
+![image](../assets/2_Alexa_Developer_Console.jpg)
+
+Click on "JSON Editor" and copy json payload to Cloud9. Replace contents of en_US.json, so that code repository is in sync!
+
+![image](../assets/1_Alexa_Developer_Console2.jpg)
+
+![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_en-US.jpg)
 
 ## Step 2 - Add Handler 
 
-index.js + register
+In **index.js** create new handler for **HANAFetchDataIntentHandler** function and register it.  
+Easiest way is to copy the **HelloWorldIntentHandler** code snippet and perform the changes, as shown below.
 
-GIT push
+Create/Copy handler function
 
-test Lambda
+![image](../assets/2_function.jpg)
+
+Register new handler function
+
+![image](../assets/2_handler.jpg)
+
+Push code to git and perform basic test.
 
 ## Step 3 - Add Dependency
 
@@ -39,14 +53,50 @@ $ cd ..
 ```
 
 Open **buildspec.yml** file and add the respective registry setting to the build step
-> npm config set @sap:registry https://npm.sap.com (https://npm.sap.com/)
+> npm config set @sap:registry https://npm.sap.com
 
 ![image](../assets/2_alexa-hana-sbx_-_AWS_Cloud9_yml.jpg)
 
 Test locally and push changes.
 
-## Step 4 - Provide Code
+## Step 4 - Insert SAP HANA Client Code
 
-Add HANA Connection Code
-Async Promise
-Test
+Create a new file called **hanadataaccess.js** in the lambda/custom directory.  
+Copy & paste the contents of [hanadataaccess.js](hanadataaccess.js) and save.
+
+![image](../assets/2_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
+
+Open the **index.js** file and add the following runtime dependency on the very top
+
+```javascript
+const Alexa = require('ask-sdk-core');
+//NEW:
+var hanadataaccess = require("hanadataaccess");
+```
+
+Inside the **HANAFetchDataIntentHandler** function, perform the following changes
+
+```javascript
+...
+handle(handlerInput) 
+{
+    var promise = hanadataaccess.load();
+        
+    return promise.then(speechText => {
+        return handlerInput.responseBuilder
+        .speak(speechText)
+        //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+        .getResponse();
+    });
+}
+...
+```
+
+Make sure to check out the code inside **hanadataaccess.js**. 
+
+> Note: Promises have been used, so that Alexa can wait for the SAP HANA Client API to respond! Furthermore, a timeout has been added, as Alexa requires a fast response! Especially adjust the **connectionParams** and **SQL**, so that the SAP HANA connection can be established and data can be retrieved.
+
+![image](../assets/2_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
+
+Run a local test, if successful commit and push.  
+Test via the Alexa Skill Simulator.
