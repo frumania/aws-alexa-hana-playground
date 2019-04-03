@@ -22,7 +22,7 @@ https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
 Open the Skillbuilder and go to the "Build" tab.  
 Add a new intent “HANADeployIntent” as well as "HANAStatusIntent".  
-Provide some utterances and for the HANADeployIntent tick the "Intent Confirmation" box. Add some confirmation text and save.
+Provide some utterances and for tick the "Intent Confirmation" box (HANADeployIntent only). Add some confirmation text and save the model.
 
 ![image](../assets/1_Alexa_Developer_Console.jpg)
 
@@ -102,4 +102,5 @@ Open the **hanaquickstart.js** and make desired changes. Especially adjust the *
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_code.jpg)
 
-Run a local test, if successful commit and push. Test via Alexa Skill Simulator.
+Run a local test, if successful commit and push.  
+Test via the Alexa Skill Simulator.

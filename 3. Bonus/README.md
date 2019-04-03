@@ -1,6 +1,6 @@
 # 3. Bonus
 
-Add Lint to pipeline
-Add Test to pipeline
-HANA Status
-Add XRAY
+- Add Lint to pipeline
+- Add Unit Test to pipeline
+- Add XRAY
+- ...
