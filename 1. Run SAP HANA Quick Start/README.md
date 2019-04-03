@@ -36,7 +36,7 @@ Click on "JSON Editor" and copy json payload to Cloud9. Replace contents of en_U
 ## Step 2 - Add Handler 
 
 In **index.js** create new handler for **HANADeployIntentHandler** and **HANAStatusIntentHandler** function and register it.  
-Easiest way is to copy the **HelpIntentHandler** code snippet and perform the changes, as shown below.
+Easiest way is to copy the **HelloWorldIntentHandler** code snippet and perform the changes, as shown below.
 
 ![image](../assets/1_function.jpg)
 
