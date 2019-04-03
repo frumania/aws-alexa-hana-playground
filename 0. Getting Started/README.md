@@ -126,4 +126,4 @@ $ git commit -m 'added local test & updated gitignore'
 $ git push origin master
 ```
 
-This concludes this section, you can now proceed!
+This concludes the section, you can now proceed!
