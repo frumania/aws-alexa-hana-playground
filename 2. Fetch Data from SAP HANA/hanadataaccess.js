@@ -3,7 +3,7 @@ var hanaClient = require("@sap/hana-client");
 const connection = hanaClient.createConnection();
 
 const connectionParams = {
-  host : "<Hostname/IP-Adress>",
+  host : "<Hostname/IP-Address>",
   port : "<Port = typically 5 digits 3<InstanceID>15",
   uid  : "<HDBUser>",
   pwd  : "<HDBPassword>",
