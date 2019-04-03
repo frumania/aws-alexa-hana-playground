@@ -3,11 +3,11 @@ var hanaClient = require("@sap/hana-client");
 const connection = hanaClient.createConnection();
 
 const connectionParams = {
-  host : "3.122.200.232",
-  port : "30215",
-  uid  : "SYSTEM",
-  pwd  : "Aws12345",
-  databaseName : "HDB",
+  host : "<Hostname/IP-Adress>",
+  port : "<Port = typically 5 digits 3<InstanceID>15",
+  uid  : "<HDBUser>",
+  pwd  : "<HDBPassword>",
+  databaseName : "<DBName e.g. HDB>",
   CONNECTTIMEOUT : "2500"
 }
 
