@@ -85,7 +85,7 @@ $ git push origin master
 
 ![image](../assets/0_alexa-hana-play_-_AWS_Cloud9_und_README_md_—_aws-alexa-hana-playground_git.jpg)
 
-See how changes are propagated through the pipeline, which can take a couple of minutes. Once completed, test your skill again via the skillbuilder -> "Test" tab.  
+See how changes are propagated through the pipeline, which can take a couple of minutes. Once completed, test your skill again via the skillbuilder -> "Test" tab = Alexa Skill Simulator.  
 You might need to refresh the page.
 
 ## Step 5 - Test Lambda via Cloud9

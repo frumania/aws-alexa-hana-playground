@@ -23,16 +23,27 @@ test Lambda
 
 ## Step 3 - Add Dependency
 
-package.json → "@sap/hana-client": "^2.3.134"
+Open the **package.json** file and add the dependency for the SAP HANA Client for nodejs = "@sap/hana-client": "^2.3.134"
 
-Run (local testing)
-npm config set @sap:registry https://npm.sap.com
-npm install @sap/hana-client
+![image](../assets/2_alexa-hana-sbx_-_AWS_Cloud9.jpg)
 
-Test locally
+Install dependencies for local testing via the console
 
-Adjust buildspec.yml
-npm config set @sap:registry https://npm.sap.com (https://npm.sap.com/)
+```bash
+$ cd lambda
+$ cd custom
+$ npm config set @sap:registry https://npm.sap.com
+$ npm install
+$ cd ..
+$ cd ..
+```
+
+Open **buildspec.yml** file and add the respective registry setting to the build step
+> npm config set @sap:registry https://npm.sap.com (https://npm.sap.com/)
+
+![image](../assets/2_alexa-hana-sbx_-_AWS_Cloud9_yml.jpg)
+
+Test locally and push changes.
 
 ## Step 4 - Provide Code
 
