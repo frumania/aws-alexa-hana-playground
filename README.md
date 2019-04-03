@@ -17,3 +17,11 @@ It is divided into three parts
 - **Infrastructure as Code / Automation** via AWS Cloud Formation and SAP HANA Quick Start
 
 ## Architecture
+
+Developer Perspective
+
+![image](assets/Architecture1.jpg)
+
+End User / Test Perspective
+
+![image](assets/Architecture2.jpg)

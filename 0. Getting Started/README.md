@@ -8,7 +8,7 @@ This section initializes the development environment and explains how you can ma
 - [x] Amazon Account for Alexa Skillbuilder Access → https://developer.amazon.com/de/alexa/
 - [x] preferably Google Chrome
 
-## Step 0
+## Step 0 - Region IRELAND
 
 Logon to the AWS console and switch to region **IRELAND** (eu-west-1)!
 

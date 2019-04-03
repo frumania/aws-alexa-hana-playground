@@ -4,9 +4,11 @@ https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
 ## Prerequisites
 
-- Codestar IAM Policy + Boundary (-> Policy Administrator)
-- Existing EC2 Key Pair e.g. HANA_DEFAULT
-- HANA Software in S3 Bucket -> s3 small letter + path /
+- For ease of use - adjusted Codestar Role: arn:aws:iam::<ID>:role/CodeStar-<projectID>-Execution
+- - Permission Boundary: Select AdministratorAccess
+- - Permission: Select AdministratorAccess
+- An existing EC2 Key Pair e.g. HANA_DEFAULT
+- HANA Software Bundle in S3 Bucket -> s3://..., see [AWS SAP HANA Quick Start](https://docs.aws.amazon.com/quickstart/latest/sap-hana/step-3.html))
 
 ## Step 1 - Add Intent & Utterances
 
