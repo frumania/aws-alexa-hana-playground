@@ -1,4 +1,4 @@
-# aws-alexa-hana-playground
+# 1. Run SAP HANA Quick Start
 
 https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
@@ -10,11 +10,18 @@ https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 - An existing EC2 Key Pair e.g. HANA_DEFAULT
 - HANA Software Bundle in S3 Bucket -> s3://..., see [AWS SAP HANA Quick Start](https://docs.aws.amazon.com/quickstart/latest/sap-hana/step-3.html)
 
-## Step 1 - Add Intent & Utterances
+## Features
+
+- Creates simple HANA sandbox environment including new VPC and default password
+- default region / availability-zone eu-west1a (Ireland)
+- Can determine Cloud Formation Status
+- TODO: Sends mail upon completion
+
+## Step 1 - Add Intents & Utterances
 
 Open the Skillbuilder and go to the "Build" tab.  
 Add a new intent “HANADeployIntent” as well as "HANAStatusIntent".  
-Provide some utterances and tick the "Intent Confirmation" box. Add confirmation text and save.
+Provide some utterances and for the HANADeployIntent tick the "Intent Confirmation" box. Add some confirmation text and save.
 
 ![image](../assets/1_Alexa_Developer_Console.jpg)
 
@@ -55,12 +62,14 @@ $ cd ..
 
 Test locally and push changes.
 
-## Step 4 - Provide Code
+## Step 4 - Insert Quick Start Code
 
-Create a new file **hanaquickstart.js** in the lambda/custom directory.  
+Create a new file called **hanaquickstart.js** in the lambda/custom directory.  
 Copy & paste the contents of this [file](hanaquickstart.js) and save.
 
-Open the **index.js** file and add runtime dependecy
+![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
+
+Open the **index.js** file and add the following runtime dependecy
 
 ```javascript
 var hanaquickstart = require("hanaquickstart");
@@ -85,5 +94,9 @@ handle(handlerInput)
 ```
 
 Perform the similar change for the **HANAStatusIntentHandler**. Desired method is "getStatus()".
+
+Open the **hanaquickstart.js** and make desired changes. Especially adjust the bucket URL, where the SAP HANA software has been downloaded.
+
+![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_code.jpg)
 
 Run a local test, if successful commit and push. Test via Alexa Skill Simulator.

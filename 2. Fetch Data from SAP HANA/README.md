@@ -1,4 +1,4 @@
-# aws-alexa-hana-playground
+# 2. Fetch Data from SAP HANA
 
 ## Prerequisites
 
