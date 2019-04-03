@@ -1,6 +1,6 @@
 # 1. Run SAP HANA Quick Start
 
-More Infos about AWS Quick Start for SAP HANA can be found here  
+More Infos about the AWS Quick Start for SAP HANA can be found here  
 https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
 ## Prerequisites
@@ -66,13 +66,15 @@ Test locally and push changes.
 ## Step 4 - Insert Quick Start Code
 
 Create a new file called **hanaquickstart.js** in the lambda/custom directory.  
-Copy & paste the contents of this [file](hanaquickstart.js) and save.
+Copy & paste the contents of this [file hanaquickstart.js](hanaquickstart.js) and save.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
 
-Open the **index.js** file and add the following runtime dependecy
+Open the **index.js** file and add the following runtime dependecy on the very top
 
 ```javascript
+const Alexa = require('ask-sdk-core');
+//NEW:
 var hanaquickstart = require("hanaquickstart");
 ```
 
