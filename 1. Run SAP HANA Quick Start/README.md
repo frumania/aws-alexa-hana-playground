@@ -9,7 +9,7 @@ https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 - - Permission Boundary: Select AdministratorAccess
 - - Permission: Select AdministratorAccess
 - An existing EC2 Key Pair e.g. HANA_DEFAULT
-- HANA Software Bundle in S3 Bucket -> s3://..., see [AWS SAP HANA Quick Start](https://docs.aws.amazon.com/quickstart/latest/sap-hana/step-3.html)
+- HANA Software Bundle in S3 Bucket -> s3://..., see [AWS SAP HANA Quick Start - Download Software](https://docs.aws.amazon.com/quickstart/latest/sap-hana/step-3.html)
 
 ## Features
 
@@ -39,7 +39,11 @@ Click on "JSON Editor" and copy json payload to Cloud9. Replace contents of en_U
 In **index.js** create new handler for **HANADeployIntentHandler** and **HANAStatusIntentHandler** function and register it.  
 Easiest way is to copy the **HelloWorldIntentHandler** code snippet and perform the changes, as shown below.
 
+Create/Copy handler function
+
 ![image](../assets/1_function.jpg)
+
+Register new handler function
 
 ![image](../assets/1_handler.jpg)
 
@@ -47,7 +51,7 @@ Push code to git and perform basic test.
 
 ## Step 3 - Add Dependency
 
-Open the **package.json** file and add the dependency for the AWS SDK for nodejs = "aws-sdk": "^2.433.0"
+Open the **package.json** file and add the dependency for the AWS SDK for nodejs = "aws-sdk": "^2.433.0", required to access AWS Cloud Formation.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9.jpg)
 
@@ -66,7 +70,7 @@ Test locally and push changes.
 ## Step 4 - Insert Quick Start Code
 
 Create a new file called **hanaquickstart.js** in the lambda/custom directory.  
-Copy & paste the contents of this [file hanaquickstart.js](hanaquickstart.js) and save.
+Copy & paste the contents of [hanaquickstart.js](hanaquickstart.js) and save.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_file.jpg)
 
@@ -96,9 +100,8 @@ handle(handlerInput)
 ...
 ```
 
-Perform the similar change for the **HANAStatusIntentHandler**. Desired method is "getStatus()".
-
-Open the **hanaquickstart.js** and make desired changes. Especially adjust the **HANAInstallMedia** = S3 bucket URL, where the SAP HANA software should have been stored. Also check/edit again the **HANAMasterPass** and **KeyName**.
+Perform the similar change for the **HANAStatusIntentHandler**. Desired method is **getStatus()**.  
+Feel free to check out the code inside **hanaquickstart.js**. Promises have to be used, so that Alexa can wait for the Cloud Formation API to respond!   Especially adjust the **HANAInstallMedia** = S3 bucket URL, where the SAP HANA software should have been stored. Also check/edit again the **HANAMasterPass** and **KeyName**.
 
 ![image](../assets/1_alexa-hana-sbx_-_AWS_Cloud9_code.jpg)
 
