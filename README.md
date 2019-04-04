@@ -1,4 +1,4 @@
-# Welcome to the Alexa HANA playground
+# Welcome to the SAP HANA playground for Alexa
 
 This repository is meant as guided walkthrough to create interactions between **Amazon Alexa** and **SAP HANA**.
 It is currently divided into three parts

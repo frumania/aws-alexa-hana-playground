@@ -72,29 +72,29 @@ module.exports = {
             cloudformation.describeStacks(params, function(err, data) {
                 if (err)
                 {
-                    resolve("Could not find any active deployment! "+err.message);
+                    resolve("Could not find any active SAP HANA deployment! "+err.message);
                     console.error(err, err.stack); //DEBUG
                 }
                 else
                 {
                     switch (data.Stacks[0].StackStatus) {
                       case 'CREATE_IN_PROGRESS':
-                        resolve('Deployment in progress, please check again later!');
+                        resolve('SAP HANA Deployment in progress, please check again later!');
                         break;
                       case 'CREATE_FAILED':
-                        resolve('Deployment failed. Please check the cloud formation and instance system logs!');
+                        resolve('SAP HANA Deployment failed. Please check the cloud formation and instance system logs!');
                         break;
                       case 'ROLLBACK_IN_PROGRESS':
-                        resolve('Deployment failed. Please check the cloud formation and instance system logs!');
+                        resolve('SAP HANA Deployment failed. Please check the cloud formation and instance system logs!');
                         break;
                       case 'ROLLBACK_COMPLETE':
-                        resolve('Deployment failed. Please check the cloud formation and instance system logs!');
+                        resolve('SAP HANA Deployment failed. Please check the cloud formation and instance system logs!');
                         break;
                       case 'CREATE_COMPLETE':
-                        resolve('Deployment finished successfully. Check your inbox for more details!');
+                        resolve('SAP HANA Deployment finished successfully. Check your inbox for more details!');
                         break;
                       default:
-                        resolve('Deployment has the following status: '+data.Stacks[0].StackStatus);
+                        resolve('SAP HANA Deployment has the following status: '+data.Stacks[0].StackStatus);
                     }
                 
                 console.log(data); //DEBUG
