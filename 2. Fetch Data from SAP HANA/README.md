@@ -4,8 +4,7 @@
 
 - HANA deployment either in same VPC like the lambda function or public IP / access
 - HANA DB user & password
-- HANA sample schema & table
-- Codestar IAM Policy + Boundary (-> Policy Administrator)
+- HANA sample schema & table data e.g. https://blogs.sap.com/2018/12/18/howto-import-sflight-sample-data-into-sap-hana-from-a-local-computer/
 
 ## Step 1 - Add Intent & Utterances
 
@@ -80,7 +79,7 @@ Inside the **HANAFetchDataIntentHandler** function, perform the following change
 ...
 handle(handlerInput) 
 {
-    var promise = hanadataaccess.load();
+    var promise = hanadataaccess.test();
         
     return promise.then(speechText => {
         return handlerInput.responseBuilder

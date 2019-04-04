@@ -1,7 +1,7 @@
 # aws-alexa-hana-playground
 
 This repository is meant as guided walkthrough to create interactions between **Amazon Alexa** and **SAP HANA**.
-It is divided into three parts
+It is currently divided into three parts
 
 0. **Getting Started**: Prepares dev environment and introduces the hello world template including testing
 1. **Run SAP HANA Quick Start**: Example on how to trigger AWS Cloud Formation scripts from alexa, in particular the SAP HANA Quick Start, creating a new SAP HANA sandbox on demand.

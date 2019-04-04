@@ -1,6 +1,8 @@
 var AWS = require('aws-sdk');
 var cloudformation = new AWS.CloudFormation();
 
+var stackname = 'SAP-HANA-on-AWS-demo';
+
 module.exports = {
     
     createInstance: function() {
@@ -9,7 +11,7 @@ module.exports = {
         {
             //See https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudFormation.html
             var params = {
-            StackName: 'SAP-HANA-on-AWS',
+            StackName: stackname,
             /*ClientRequestToken: 'hana1',*/
             Capabilities: [
             "CAPABILITY_IAM", "CAPABILITY_AUTO_EXPAND"
@@ -64,7 +66,7 @@ module.exports = {
         return new Promise(function(resolve, reject) 
         {
             var params = {
-                StackName: 'SAP-HANA-on-AWS'
+                StackName: stackname
             };
         
             cloudformation.describeStacks(params, function(err, data) {

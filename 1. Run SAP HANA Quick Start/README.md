@@ -3,6 +3,8 @@
 More Infos about the AWS Quick Start for SAP HANA can be found here  
 https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 
+> Note: Landscape is using a temporary license for 90 days!
+
 ## Prerequisites
 
 - For ease of use - adjusted Codestar Role: arn:aws:iam::\<ID\>:role/CodeStar-\<projectID\>-Execution
