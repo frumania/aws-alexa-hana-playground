@@ -93,7 +93,7 @@ module.exports = {
                 console.log(city);
                 console.log(carrier);
                 
-                var sql = `SELECT DISTINCT CITYTO FROM "`+schema+`"."SPFLI" WHERE CARRID = (SELECT DISTINCT CARRID FROM "`+schema+`"."SCARR" WHERE LCASE(CARRNAME) = '`+carrier+`' AND LCASE(CITYFROM) = LCASE('`+city+`'))`
+                var sql = `SELECT DISTINCT CITYTO FROM "`+schema+`"."SPFLI" WHERE CARRID = (SELECT DISTINCT CARRID FROM "`+schema+`"."SCARR" WHERE LCASE(CARRNAME) = LCASE('`+carrier+`') AND LCASE(CITYFROM) = LCASE('`+city+`'))`
                 console.log(sql);
                 
                 connection.exec(sql, (err, rows) => {
