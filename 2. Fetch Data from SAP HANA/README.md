@@ -106,5 +106,6 @@ Look into the "fetchFlights" function, try to create an appropriate utterance in
 The steps should be straight forward as just performed in (4).
 
 An example is shown below:
-
+  
+  
 ![image](../assets/2_Alexa_Developer_Console_add.jpg)
