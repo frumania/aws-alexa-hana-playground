@@ -8,7 +8,7 @@ var connectionParams = {
   uid  : "<HDBUser>",
   pwd  : "<HDBPassword>",
   databaseName : "<DBName e.g. HDB>",
-  CONNECTTIMEOUT : "2500"
+  CONNECTTIMEOUT : "2500" //Should be smaller than the lambda execution time (default 3s, can be changed) and the Alexa timeout (10s, cannot be changed)
 }
 
 var connected = false;

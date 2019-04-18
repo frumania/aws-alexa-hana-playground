@@ -26,6 +26,10 @@ End User / Test Perspective
 
 ![image](assets/Architecture2.jpg)
 
+## Useful Resources
+
+[Automated Test and Deployment of Alexa Skills (BER SUMMIT 2019)](https://aws-de-marketing.s3-eu-central-1.amazonaws.com/Field%20Marketing/Summit-Berlin-2019/Presentations/AWS_Summit_Berlin_2019_Feb27_AutomatingTestandDeploymentofAlexaSkills.pdf))
+
 ## License
 
 [![Apache 2](https://img.shields.io/badge/license-Apache%202-blue.svg)](./LICENSE.txt)
