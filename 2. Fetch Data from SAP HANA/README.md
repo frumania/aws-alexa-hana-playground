@@ -99,3 +99,12 @@ Make sure to check out the code inside **hanadataaccess.js**.
 
 Run a local test, if successful commit and push.  
 Test via the Alexa Skill Simulator.
+
+## Step 5 - Intent with parameterization
+
+Look into the "fetchFlights" function, try to create an appropriate utterance incl. parameters and do the respective handler registration and code mapping.
+The steps should be straight forward as just performed in (4).
+
+An example is shown below:
+
+![image](../assets/2_Alexa_Developer_Console_add.jpg)
