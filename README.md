@@ -20,12 +20,14 @@ Tested in region **eu-west-1 (Ireland)**
 
 ## Demo & Alexa Commands
 
+@1  
 *start hana playground*  
 *Deploy a new HANA sandbox*  
 *What's the status*  
 
 <img src="assets/alexa_demo1.jpg" width="300" >
 
+@2  
 *start hana playground*  
 *which flight destinations does lufthansa offer from frankfurt*  
 *which flight destinations does singapore airlines offer from frankfurt*  
