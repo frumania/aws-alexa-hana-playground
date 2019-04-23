@@ -12,7 +12,7 @@ Tested in region **eu-west-1 (Ireland)**
 
 ## Covered Topics
 
-- Being **Serverless** via AWS LAMBDA 
+- Being **Serverless** via AWS Lambda 
 - **Continous Integration / Deployment** (CI/CD) via AWS Codestar, CodeCommit, CodeBuild, CodeDeploy, CodePipeline
 - Skill development for **Amazon Alexa**
 - **SAP HANA** Deployment and Integration
