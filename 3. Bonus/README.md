@@ -8,7 +8,7 @@ See example [here](https://medium.com/the-node-js-collection/why-and-how-to-use-
 
 See example [here](https://developer.amazon.com/de/blogs/alexa/post/35bdad3d-57c8-4623-88c6-815540697af5/unit-testing-create-functional-alexa-skills)
 
-## Implement mail notification (AWS SES)
+## Implement mail notification, once deployment is ready (AWS SES)
 
 See example [here](http://www.wisdomofjim.com/blog/sending-an-email-from-aws-lambda-function-in-nodejs-with-aws-simple-email-service)
 
