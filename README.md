@@ -3,7 +3,7 @@
 This repository is meant as guided walkthrough to create interactions between **Amazon Alexa** and **SAP HANA**.
 It is currently divided into three parts
 
-0. **Getting Started**: Prepares dev environment and introduces the hello world template including testing
+0. **Getting Started**: Prepares dev environment and introduces the hello world template including testing, based on AWS Codestar and Cloud9
 1. **Run SAP HANA Quick Start**: Example on how to trigger AWS Cloud Formation scripts from Alexa, in particular triggering the AWS Quick Start for SAP HANA, deploying a new SAP HANA sandbox on demand
 2. **Fetch Data from SAP HANA**: Example on how to fetch data from an existing SAP HANA database
 3. **Bonus**: Advanced tasks e.g. X-Ray :)
