@@ -12,6 +12,7 @@ https://docs.aws.amazon.com/quickstart/latest/sap-hana/welcome.html
 - - Permission: Select AdministratorAccess
 - An existing EC2 Key Pair e.g. HANA_DEFAULT
 - HANA Software Bundle in S3 Bucket -> s3://..., see [AWS SAP HANA Quick Start - Download Software](https://docs.aws.amazon.com/quickstart/latest/sap-hana/step-3.html)
+- Respective EC2 Quota e.g. default instance type = r4.2xlarge (can be changed), check your current account [limits](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#Limits)
 
 ## Features
 
