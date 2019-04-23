@@ -67,7 +67,7 @@ In Codestar - Inspect Pipeline, go to CodeDeploy and adjust Deployment Group →
 
 ![image](../assets/0_adjust_pipeline.png)
 
-In Cloud9, open the **skill.json** file and change the skill name e.g. hello hana playground. Make sure to save the file!
+In Cloud9, open the **skill.json** file and change the skill name e.g. hana playground. Make sure to save the file!
 
 ![image](../assets/0_alexa-hana-play_-_AWS_Cloud9.jpg)
 

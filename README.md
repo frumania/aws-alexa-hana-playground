@@ -8,6 +8,8 @@ It is currently divided into three parts
 2. **Fetch Data from SAP HANA**: Example on how to fetch data from an existing SAP HANA database.
 3. **Bonus**: Advanced tasks :)
 
+Tested in region **eu-west-1 (Ireland)**
+
 ## Covered Topics
 
 - Being **Serverless** via AWS LAMBDA 
@@ -15,6 +17,20 @@ It is currently divided into three parts
 - Skill development for **Amazon Alexa**
 - **SAP HANA** Deployment and Integration
 - **Infrastructure as Code / Automation** via AWS Cloud Formation and AWS Quick Start for SAP HANA
+
+## Demo & Alexa Commands
+
+![image](assets/alexa_demo1.jpg)
+
+*start hana playground*
+*Deploy a new HANA sandbox*
+*What's the status*
+
+![image](assets/alexa_demo2.jpg)
+
+*start hana playground*
+*which flight destinations does lufthansa offer from frankfurt*
+*which flight destinations does singapore airlines offer from frankfurt*
 
 ## Architecture
 
