@@ -20,13 +20,13 @@ Tested in region **eu-west-1 (Ireland)**
 
 ## Demo & Alexa Commands
 
-![image](assets/alexa_demo1.jpg | width=100
+![image](assets/alexa_demo1.jpg | width=100)
 
 *start hana playground*
 *Deploy a new HANA sandbox*
 *What's the status*
 
-![image](assets/alexa_demo2.jpg | width=100
+![image](assets/alexa_demo2.jpg | width=100)
 
 *start hana playground*
 *which flight destinations does lufthansa offer from frankfurt*
