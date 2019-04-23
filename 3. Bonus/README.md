@@ -12,11 +12,11 @@ See example [here](https://developer.amazon.com/de/blogs/alexa/post/35bdad3d-57c
 
 See example [here](http://www.wisdomofjim.com/blog/sending-an-email-from-aws-lambda-function-in-nodejs-with-aws-simple-email-service)
 
-## Add XRAY / traceability
+## Add AWS X-Ray / traceability
 
 AWS X-Ray allows easy traceability throughout a serverless / microservice landscape.
 
-In the template.yml enable XRAY monitoring:
+In the template.yml enable X-Ray monitoring:
 
 ![image](../assets/AWS_X-Ray-yml.jpg)
 
